@@ -221,4 +221,4 @@ async def estudiar_tema(req: EstudiarTemaRequest):
         response = model.generate_content(prompt)
         return {"resultado": response.text}
     except Exception as e:
-        raise HTTPException(status_code=500, detail="Error conectando con NAMI: " + str(e)) 
+        raise HTTPException(status_code=500, detail="Error conectando con NAMI: " + str(e))
